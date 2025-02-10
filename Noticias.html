@@ -1,38 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <title>Noticias</title>
+    <title>Notícias de Futebol - Atualizações</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="TelaPrincipal.html">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="Noticias.html">Notícias</a>
-              <a class="nav-link" href="Recompensas.html">Recompensas</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Colocações
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="ColocacoesBrasileirao.html">Colocações do Brasileirão</a></li>
-                  <li><a class="dropdown-item" href="ColocacoesPremier.html">Colocações do Premier League</a></li>
-                  <li><a class="dropdown-item" href="ColocacoesChampions.html">Colocações da Champions League</a></li>
-                </ul>
-              </li>
-            </div>
-          </div>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Notícias de Futebol</h1>
         </div>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="TelaPrincipal.html">Início</a></li>
+                <li><a href="Noticias.html">Últimas Notícias</a></li>
+                <li><a href="Jogos.html">Jogos</a></li>
+                <li><a href="#">Colocações</a></li>
+                <li><a href="Recompensas.html">Recompensas</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- Conteúdo Principal -->
+    <main class="content">
+        <section class="news-section">
+            <h2>Últimas Atualizações</h2>
+           
+            <div class="news-list">
+                <article class="news-item">
+                    <img src="noticias.png" alt="Notícia 1">
+                    <div class="news-info">
+                        <h3>Vitória do Flamengo sobre o Vasco</h3>
+                        <p class="news-date">5 de fevereiro de 2025</p>
+                        <p>O Flamengo venceu o Vasco por 2 a 1 em um jogo emocionante no Maracanã.</p>
+                        <a href="#">Leia mais</a>
+                    </div>
+                </article>
+               
+                <article class="news-item">
+                    <img src="noticias2.png" alt="Notícia 2">
+                    <div class="news-info">
+                        <h3>Transferência de Neymar para o PSG</h3>
+                        <p class="news-date">4 de fevereiro de 2025</p>
+                        <p>Neymar faz sua primeira aparição no PSG após a transferência milionária.</p>
+                        <a href="#">Leia mais</a>
+                    </div>
+                </article>
+               
+                <article class="news-item">
+                    <img src="noticias3.png" alt="Notícia 3">
+                    <div class="news-info">
+                        <h3>Partida decisiva entre Palmeiras e São Paulo</h3>
+                        <p class="news-date">3 de fevereiro de 2025</p>
+                        <p>O Palmeiras derrotou o São Paulo por 3 a 0 em um jogo importante para o campeonato.</p>
+                        <a href="#">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+ 
+        <!-- Barra Lateral (Sidebar) -->
+        <aside class="sidebar">
+            <h3>Outras Notícias</h3>
+            <ul>
+                <li><a href="#">Seleção Brasileira se prepara para a Copa do Mundo</a></li>
+                <li><a href="#">Corinthians vence na Arena em grande partida</a></li>
+                <li><a href="#">Santos anuncia novo reforço para a temporada</a></li>
+                <li><a href="#">Análise do Campeonato Paulista 2025</a></li>
+                <li><a href="#">Transferências de última hora</a></li>
+            </ul>
+        </aside>
+    </main>
+ 
+    <!-- Rodapé -->
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 Notícias de Futebol. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
